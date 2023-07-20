@@ -10,8 +10,10 @@ namespace EmployeeWageCoomputation
             bool flag = true;
             EmployeeeWage appleWage = new EmployeeeWage("apple",200,25,10);
             appleWage.CalculateDailyWage();
+            appleWage.CompanyWage();
             EmployeeeWage tvsWage = new EmployeeeWage("tvs", 100, 28, 8);
             tvsWage.CalculateDailyWage();
+            tvsWage.CompanyWage();
         }
     }
 }

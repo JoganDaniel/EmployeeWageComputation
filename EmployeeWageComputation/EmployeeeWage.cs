@@ -54,6 +54,10 @@ namespace EmployeeWageComputation
             totalEmpWage = wageperhr * empHrs;
             Console.WriteLine("Wage of " +companyname+" employee is " + totalEmpWage);
         }
+        public void CompanyWage()
+        {
+            Console.WriteLine(this.companyname+" wage is "+this.totalEmpWage);
+        }
 
         
     }
