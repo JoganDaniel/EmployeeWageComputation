@@ -12,6 +12,8 @@ namespace EmployeeWageComputation
         int totalEmpWage = 0, empHrs = 0,wageperhr,totalWorkingdays,totalworkinghrs;
         string companyname;
         Random random = new Random();
+
+
         public EmployeeeWage(string companyname, int wageperhr,int totalWorkingdays,int totalworkinghrs)
         {
             this.companyname = companyname;
@@ -52,5 +54,7 @@ namespace EmployeeWageComputation
             totalEmpWage = wageperhr * empHrs;
             Console.WriteLine("Wage of " +companyname+" employee is " + totalEmpWage);
         }
+
+        
     }
 }

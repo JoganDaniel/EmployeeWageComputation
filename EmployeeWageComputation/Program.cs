@@ -7,9 +7,10 @@ namespace EmployeeWageCoomputation
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to employee wage computation");
-            EmployeeeWage appleWage = new EmployeeeWage("apple", 20, 30, 8); 
+            bool flag = true;
+            EmployeeeWage appleWage = new EmployeeeWage("apple",200,25,10);
             appleWage.CalculateDailyWage();
-            EmployeeeWage tvsWage =  new EmployeeeWage("tvs",35,20,10);
+            EmployeeeWage tvsWage = new EmployeeeWage("tvs", 100, 28, 8);
             tvsWage.CalculateDailyWage();
         }
     }
