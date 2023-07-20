@@ -8,12 +8,11 @@ namespace EmployeeWageCoomputation
         {
             Console.WriteLine("Welcome to employee wage computation");
             bool flag = true;
-            EmployeeeWage appleWage = new EmployeeeWage("apple",200,25,10);
-            appleWage.CalculateDailyWage();
-            appleWage.CompanyWage();
-            EmployeeeWage tvsWage = new EmployeeeWage("tvs", 100, 28, 8);
-            tvsWage.CalculateDailyWage();
-            tvsWage.CompanyWage();
+            EmpWageBuilder emp=new EmpWageBuilder();
+            emp.AddToCompanyArray("apple", 200, 25, 10);
+            emp.AddToCompanyArray("tvs", 100, 30, 8);
+            emp.AddToCompanyArray("zoho", 150, 27, 9);
+            emp.CalculateWage();
         }
     }
 }
